@@ -19,8 +19,7 @@ namespace Test
         {
             stopWatch.Restart();
             stopWatch.Start();
-            //result = gcd.FirstMethod(gcd.FirstMethod(0, 36), gcd.FirstMethod(585, 360));
-            result = gcd.FirstMethod(gcd.SecondMethod(10, 6), gcd.SecondMethod(44, -18));
+            result = gcd.FirstMethod(gcd.FirstMethod(0, 36), gcd.FirstMethod(585, 360));
             stopWatch.Stop();
             Console.WriteLine(result);
             Console.WriteLine("RunTime " + stopWatch.Elapsed);
@@ -30,7 +29,6 @@ namespace Test
         {
             stopWatch.Restart();
             stopWatch.Start();
-            //result = gcd.SecondMethod(gcd.FirstMethod(0, 36), gcd.FirstMethod(585, 360));
             result = gcd.SecondMethod(gcd.SecondMethod(10, 6), gcd.SecondMethod(44, -18));
             stopWatch.Stop();
             Console.WriteLine(result);
